@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse</title>
+</head>
+<body>
+<script>
+    let x = [];
+    for (let i = 0; i < 6; i++){
+        x[i] = prompt("nhap 6 phan tu mang 1")
+    }
+    document.write("phan tu nhap vao la " + x + "<br>");
+    let first = 0;
+    let last = x.length - 1;
+    while (first < last) {
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    }
+    document.write("mang sau khi dao nguoc " + x);
+</script>
+</body>
+</html>
